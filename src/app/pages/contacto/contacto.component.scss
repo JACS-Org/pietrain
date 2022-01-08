@@ -1,0 +1,16 @@
+.contact{
+   min-height: 50vh;
+   padding-top: 2rem;
+   display: flex;
+   justify-content: center;
+}
+.form{
+   background-color: rgb(149, 195, 75,0.8);
+   padding: 1.5rem;
+   border-radius: 10px;
+   width: 100%;
+   max-width: 45rem;
+   input, textarea, button{
+      border-radius: 5px;
+   }
+}
