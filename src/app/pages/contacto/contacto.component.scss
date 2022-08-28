@@ -9,8 +9,15 @@
    padding: 1.5rem;
    border-radius: 10px;
    width: 100%;
-   max-width: 45rem;
    input, textarea, button{
       border-radius: 5px;
+   }
+}
+
+.map{
+   iframe{
+      width: 100%;
+      min-height: 500px;
+      border-radius: .4rem;
    }
 }

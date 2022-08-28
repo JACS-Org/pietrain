@@ -1,4 +1,17 @@
 .content-main{
    padding-top: 10vh;
-   min-height: 80vh;
+   min-height: 85vh;
+}
+
+.wwp-btn{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   a{
+      padding: .5rem;
+      svg:hover{
+         scale: 1.2;
+         transition: all .5s ease-in-out;
+      }
+   }
 }
