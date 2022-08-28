@@ -1,10 +1,12 @@
 
-@import "~bootswatch/dist/cosmo/variables";
 @import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/cosmo/bootswatch";
 
 
 
 .img{
    max-width: 100%;
+}
+
+.bg-success{
+   background-color: #389619!important;
 }
