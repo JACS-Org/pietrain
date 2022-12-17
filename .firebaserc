@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pietrain-paita": {
+      "hosting": {
+        "pietrain": [
+          "pietrain-paita"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pietrain-paita"
+  }
+}

@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactoComponent } from './pages/contacto/contacto.component';
-import { InicioComponent } from './pages/inicio/inicio.component';
-import { ProductosComponent } from './pages/productos/productos.component';
 
 const routes: Routes = [
-  { path:'', component: InicioComponent},
-  { path:'contacto', component: ContactoComponent},
-  { path:'productos', component: ProductosComponent}
+  { 
+    path: '', 
+    loadChildren: ()=>import('./public/public.module')
+    .then(md=>md.PublicModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: ()=>import('./admin/admin.module')
+        .then(md=>md.AdminModule)
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
