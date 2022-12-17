@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { ProductsService } from 'src/app/services/products.service';
 import { Product } from 'src/app/shared/models/Product';
 
@@ -9,13 +9,13 @@ import { Product } from 'src/app/shared/models/Product';
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit {
-  form: FormGroup ;
+  form: UntypedFormGroup ;
   constructor(
     //private productService: ProductsService
   ) { 
-    this.form =  new FormGroup({
-      title: new FormControl(null, Validators.required),
-      description: new FormControl(null, Validators.required)
+    this.form =  new UntypedFormGroup({
+      title: new UntypedFormControl(null, Validators.required),
+      description: new UntypedFormControl(null, Validators.required)
     })
   }
 
